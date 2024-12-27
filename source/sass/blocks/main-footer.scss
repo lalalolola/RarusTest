@@ -51,7 +51,6 @@
 }
 
 .main-footer__nav-item {
-
   &:first-child .main-footer__nav-link {
     padding-left: 0;
   }
@@ -102,9 +101,7 @@
   }
 
   &--mail {
-
     svg {
-
       @media (max-width: $mobile-width) {
         width: 18px;
         height: 11px;

@@ -20,4 +20,3 @@ function onButtonCloseCatalogMenu (){
   buttonOpenCatalogMenu.addEventListener('click', onButtonOpenCatalogMenu);
   buttonCloseCatalogMenu.removeEventListener('click', onButtonCloseCatalogMenu);
 }
-

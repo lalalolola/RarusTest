@@ -12,7 +12,6 @@
   transition: all 0.2s ease-in-out;
 
   &:hover {
-
     &::before,
     &::after,
     .button-toggle__line {
@@ -64,4 +63,3 @@
   height: 2px;
   transform: scale(1);
 }
-

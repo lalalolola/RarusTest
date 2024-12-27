@@ -119,7 +119,6 @@
   }
 
   &--desktop {
-
     @media (max-width: $mobile-width) {
       display: none;
     }
@@ -189,11 +188,8 @@
   }
 }
 
-
-
 .main-header__categories {
   .container {
-
     @media (max-width: $tablet-width) {
       padding-right: 0;
     }
@@ -249,7 +245,7 @@
     color: $accent-color;
 
     svg {
-    color: $accent-color;
+      color: $accent-color;
     }
   }
 
@@ -277,7 +273,7 @@
     }
 
     @media (max-width: $mobile-width) {
-      padding:9px;
+      padding: 9px;
     }
   }
 }
@@ -291,7 +287,8 @@
   border: none;
   display: flex;
   color: $dark-gray-decoration-color;
-  transition: color 0.2s ease-in-out;cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
 
   &:hover {
     color: $accent-color;

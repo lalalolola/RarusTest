@@ -70,7 +70,7 @@
     transform: translateY(-50%);
     mask-image: url("../img/icons/stack.svg#catalog-arrow");
     background-color: $dark-gray-decoration-color;
-    transition: background-color .2s ease-in-out
+    transition: background-color 0.2s ease-in-out;
   }
 
   &:hover {
