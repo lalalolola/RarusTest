@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --h1: 36px;
+  --h2: 22px;
+  --text: 18px;
+  --small-text: 16px;
+  --smallest-text: 14px;
+  --mobile-header-text: 10px;
+
+  @media (max-width: $tablet-width) {
+    --h2: 18px;
+  }
+
+  @media (max-width: $mobile-width) {
+    --h1: 24px;
+    --h2: 17px;
+    --text: 16px;
+    --small-text: 14px;
+    --smallest-text: 12px;
+  }
+}

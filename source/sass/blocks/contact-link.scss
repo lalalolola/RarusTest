@@ -1,0 +1,21 @@
+.contact-link {
+  padding: 8px 0 8px 0;
+  margin: 0;
+  color: $primary__fonts-color;
+  font-size: var(--text);
+  transition: color 0.2s ease-in-out;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+
+  &:hover {
+    .contact-link__icon {
+      color: $accent-color;
+    }
+  }
+
+  &__icon {
+    color: $dark-gray-decoration-color;
+    transition: color 0.2s ease-in-out;
+  }
+}

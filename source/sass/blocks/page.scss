@@ -1,0 +1,24 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  //grid-template-rows: min-content 1fr min-content;
+  min-height: 100vh;
+  font-size: var(--text);
+  font-weight: 400;
+  color: $primary__fonts-color;
+  font-family: "Roboto", "Tahoma", sans-serif;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 64px;
+  }
+
+  main {
+    flex: 1;
+  }
+}

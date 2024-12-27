@@ -1,0 +1,180 @@
+.catalog-menu-mobile {
+  position: fixed;
+  padding: 18px 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow-y: scroll;
+  z-index: 3;
+  background-color: $main__background-color;
+  transition: right 0.5s ease-in-out;
+
+  &--closed {
+    right: 100%;
+  }
+
+  &--open {
+    right: 0;
+  }
+}
+
+.catalog-menu-mobile__button-close {
+  margin-left: auto;
+}
+
+.catalog-menu-mobile__button-open {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: flex;
+  }
+}
+
+.catalog-menu-mobile__title {
+  margin: 0 0 10px;
+}
+
+.catalog-menu-mobile__item:not(:last-child) {
+  border-bottom: 2px solid $light-gray-decoration-color;
+}
+
+.catalog-menu-mobile__link {
+  position: relative;
+  padding: 15px 30px 15px 50px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: image-set(url("../img/catalog/catalog-menu-1@1x.webp") type("image/webp") 1x,
+      url("../img/catalog/catalog-menu-1@2x.webp") type("image/webp") 2x,
+      url("../img/catalog/catalog-menu-1@1x.png") 1x,
+      url("../img/catalog/catalog-menu-1@2x.png ") 2x);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 15px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    mask-image: url("../img/icons/stack.svg#catalog-arrow");
+    background-color: $dark-gray-decoration-color;
+    transition: background-color .2s ease-in-out
+  }
+
+  &:hover {
+    &::after {
+      background-color: $accent-color;
+    }
+  }
+
+  &--2 {
+    &::before {
+      background-image: image-set(url("../img/catalog/catalog-menu-2@1x.webp") type("image/webp") 1x,
+        url("../img/catalog/catalog-menu-2@2x.webp") type("image/webp") 2x,
+        url("../img/catalog/catalog-menu-2@1x.png") 1x,
+        url("../img/catalog/catalog-menu-2@2x.png ") 2x);
+    }
+  }
+
+  &--3 {
+    &::before {
+      background-image: image-set(url("../img/catalog/catalog-menu-3@1x.webp") type("image/webp") 1x,
+        url("../img/catalog/catalog-menu-3@2x.webp") type("image/webp") 2x,
+        url("../img/catalog/catalog-menu-3@1x.png") 1x,
+        url("../img/catalog/catalog-menu-3@2x.png ") 2x);
+    }
+  }
+
+  &--4 {
+    &::before {
+      background-image: image-set(url("../img/catalog/catalog-menu-4@1x.webp") type("image/webp") 1x,
+        url("../img/catalog/catalog-menu-4@2x.webp") type("image/webp") 2x,
+        url("../img/catalog/catalog-menu-4@1x.png") 1x,
+        url("../img/catalog/catalog-menu-4@2x.png ") 2x);
+    }
+  }
+
+  &--5 {
+    &::before {
+      background-image: image-set(url("../img/catalog/catalog-menu-5@1x.webp") type("image/webp") 1x,
+        url("../img/catalog/catalog-menu-5@2x.webp") type("image/webp") 2x,
+        url("../img/catalog/catalog-menu-5@1x.png") 1x,
+        url("../img/catalog/catalog-menu-5@2x.png ") 2x);
+    }
+  }
+
+  &--6 {
+    &::before {
+      background-image: image-set(url("../img/catalog/catalog-menu-6@1x.webp") type("image/webp") 1x,
+        url("../img/catalog/catalog-menu-6@2x.webp") type("image/webp") 2x,
+        url("../img/catalog/catalog-menu-6@1x.png") 1x,
+        url("../img/catalog/catalog-menu-6@2x.png ") 2x);
+    }
+  }
+
+  &--7 {
+    &::before {
+      background-image: image-set(url("../img/catalog/catalog-menu-7@1x.webp") type("image/webp") 1x,
+        url("../img/catalog/catalog-menu-7@2x.webp") type("image/webp") 2x,
+        url("../img/catalog/catalog-menu-7@1x.png") 1x,
+        url("../img/catalog/catalog-menu-7@2x.png ") 2x);
+    }
+  }
+
+  &--8 {
+    &::before {
+      background-image: image-set(url("../img/catalog/catalog-menu-8@1x.webp") type("image/webp") 1x,
+        url("../img/catalog/catalog-menu-8@2x.webp") type("image/webp") 2x,
+        url("../img/catalog/catalog-menu-8@1x.png") 1x,
+        url("../img/catalog/catalog-menu-8@2x.png ") 2x);
+    }
+  }
+
+  &--9 {
+    &::before {
+      background-image: image-set(url("../img/catalog/catalog-menu-9@1x.webp") type("image/webp") 1x,
+        url("../img/catalog/catalog-menu-9@2x.webp") type("image/webp") 2x,
+        url("../img/catalog/catalog-menu-9@1x.png") 1x,
+        url("../img/catalog/catalog-menu-9@2x.png ") 2x);
+    }
+  }
+
+  &--10 {
+    &::before {
+      background-image: image-set(url("../img/catalog/catalog-menu-10@1x.webp") type("image/webp") 1x,
+        url("../img/catalog/catalog-menu-10@2x.webp") type("image/webp") 2x,
+        url("../img/catalog/catalog-menu-10@1x.png") 1x,
+        url("../img/catalog/catalog-menu-10@2x.png ") 2x);
+    }
+  }
+
+  &--11 {
+    &::before {
+      background-image: image-set(url("../img/catalog/catalog-menu-11@1x.webp") type("image/webp") 1x,
+        url("../img/catalog/catalog-menu-11@2x.webp") type("image/webp") 2x,
+        url("../img/catalog/catalog-menu-11@1x.png") 1x,
+        url("../img/catalog/catalog-menu-11@2x.png ") 2x);
+    }
+  }
+
+  &--12 {
+    &::before {
+      background-image: image-set(url("../img/catalog/catalog-menu-12@1x.webp") type("image/webp") 1x,
+        url("../img/catalog/catalog-menu-12@2x.webp") type("image/webp") 2x,
+        url("../img/catalog/catalog-menu-12@1x.png") 1x,
+        url("../img/catalog/catalog-menu-12@2x.png ") 2x);
+    }
+  }
+}

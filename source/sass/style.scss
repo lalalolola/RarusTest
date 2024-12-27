@@ -1,0 +1,18 @@
+//Переменные
+@import "variables";
+
+//Базовые свойства
+@import "base/fonts";
+@import "base/base";
+
+//Блоки компонентов
+@import "blocks/page";
+@import "blocks/container";
+@import "blocks/contact-link";
+@import "blocks/button-toggle";
+@import "blocks/main-header";
+@import "blocks/main-header-mobile";
+@import "blocks/catalog-menu-mobile";
+@import "blocks/main-footer";
+@import "blocks/catalog";
+@import "blocks/product";
