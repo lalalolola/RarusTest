@@ -2,12 +2,12 @@
   padding-top: 16px;
   padding-bottom: 96px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding-top: 18px;
     padding-bottom: 72px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     padding-top: 7px;
     padding-bottom: 48px;
   }
@@ -16,7 +16,7 @@
 .catalog__title {
   margin: 0 0 36px;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin-bottom: 24px;
   }
 }
@@ -29,7 +29,7 @@
   margin: 0;
   list-style: none;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     gap: 18px;
   }
 }

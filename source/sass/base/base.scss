@@ -45,11 +45,11 @@ ol {
   --smallest-text: 14px;
   --mobile-header-text: 10px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     --h2: 18px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     --h1: 24px;
     --h2: 17px;
     --text: 16px;

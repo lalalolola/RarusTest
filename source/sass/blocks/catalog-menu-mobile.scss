@@ -26,7 +26,7 @@
 .catalog-menu-mobile__button-open {
   display: none;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     display: flex;
   }
 }

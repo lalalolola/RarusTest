@@ -7,7 +7,7 @@
   box-shadow: 0 -3px 13px 0 rgba(146, 146, 146, 0.25);
   z-index: 2;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     display: block;
   }
 }
